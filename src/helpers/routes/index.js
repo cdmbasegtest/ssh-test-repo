@@ -1,0 +1,12 @@
+export * from './authentication'
+export * from './employees'
+export * from './news'
+export * from './navColumns'
+export * from './onboarding'
+export * from './schedule'
+export * from './jobs'
+export * from './editJob'
+export * from './chat'
+export * from './applicants'
+
+export const rootPath = () => '/'

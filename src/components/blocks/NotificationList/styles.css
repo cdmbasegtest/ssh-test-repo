@@ -1,0 +1,148 @@
+.NotificationList{
+    width: 414px;
+    height: 623px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 0;
+    top: 80px;
+
+
+&-top_line{
+    width: 414px;
+    height: 88px;
+    background-color: #78736e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+&-top_line>button{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+&-top_line>button>svg{
+    color: white;
+    font-size: 24px;
+}
+
+&-top_line>div>h1{
+    font-family: Prompt;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+&-top_line>&-tabs{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    font-family: Prompt;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+&-top_line>&-tabs>.tab-link {
+  text-align: center;
+  flex-grow: 1;
+}
+
+&-top_line>&-tabs>.tab-link-active,
+&-top_line>&-tabs>.tab-link:hover{
+    font-weight: bold;
+    border-bottom: 6px solid #fff;
+}
+
+&-notification_list{
+    overflow-y: auto;
+}
+
+&-notification_list::-webkit-scrollbar{
+    width: 10px;
+    background-color: #e0e0e0;
+}
+
+&-notification_list::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color: #9e9d9d;
+}
+
+&-notification_list>div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 403px;
+    height: 60px;
+    background-color: #ffffff;
+    margin-top: 1px;
+    cursor: pointer;
+    padding-left: 27px;
+}
+
+&-notification_list>&-active,
+&-notification_list>div:hover{
+    background-color: #f5f5f5;
+    padding-left: 0;
+}
+
+&-notification_list>div>&-arrow{
+    display: none;
+    justify-content: center;
+    align-content: center;
+    width: 24px;
+    height: 24px;
+    opacity: 0.6;
+    margin-right: 3px;
+    font-size: 24px;
+}
+
+&-notification_list>&-active &-arrow,
+&-notification_list>div:hover &-arrow{
+    display: flex;
+}
+
+&-notification_list>div>&-image{
+    width: 42px;
+    height: 42px;
+    background-color: grey;
+    margin-right: 12px;
+    border-radius: 50%;
+}
+
+&-notification_list>div>&-message>&-caption{
+    font-family: Lato;
+    font-size: 14px;
+    color: #565656;
+    margin-bottom: 4px;
+    width: 246px;
+
+}
+
+&-notification_list>div>&-message>&-caption>span{
+    font-weight: bold;
+}
+
+&-notification_list>div>&-message>&-time{
+    font-family: Lato;
+    font-size: 12px;
+    font-style: italic;
+    color: #565656;
+}
+
+&-notification_list>div>&-actions{
+    margin-left: 20px;
+}
+
+}

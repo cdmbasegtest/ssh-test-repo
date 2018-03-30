@@ -1,0 +1,344 @@
+.InterviewForm {
+  width: 498px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 6px 6px 26px 26px;
+  margin-right: 52px;
+  position: absolute;
+  left: 38px;
+
+  &-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-top_line {
+    width: 498px;
+    height: 54px;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+
+  &-top_line > &-title {
+    margin-right: 112px;
+    font-family: Prompt;
+    font-size: 20px;
+    color: #565656;
+  }
+
+  &-top_line > &-cancel {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 11px;
+  }
+
+  &-top_line > &-cancel > &-cancel_button {
+    font-size: 20px;
+  }
+
+  &-title {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-title > &-image {
+    width: 132px;
+    height: 130px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-left: 32px;
+    margin-right: 44px;
+  }
+
+  &-title > h1 {
+    font-family: Lato;
+    font-size: 18px;
+    color: #575757;
+    font-weight: normal;
+  }
+
+  &-date {
+    margin-top: 42px;
+  }
+
+  &-time {
+    margin-top: 35px;
+  }
+
+  &-duration {
+    margin-top: 37px;
+  }
+
+  &-date,
+  &-time,
+  &-duration {
+    margin-left: 181px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-duration {
+    margin-left: 49px;
+  }
+
+  &-date > &-date_picker {
+    background-color: transparent !important;
+    z-index: 1;
+  }
+
+  &-date > &-date_picker > div:first-child {
+    max-width: 174px;
+    height: 31px !important;
+    border: solid 2px #efefef;
+    font-family: Lato !important;
+    font-size: 16px !important;
+    color: #575757 !important;
+    cursor: pointer !important;
+    background-color: transparent !important;
+    z-index: 1;
+  }
+
+  &-date > &-date_picker > div:first-child > input {
+    text-indent: 10px;
+    color: #575757 !important;
+    background-color: transparent !important;
+    z-index: 1;
+  }
+
+  &-date > &-date_picker > div:first-child::after {
+    content: '';
+    background-image: url('../../../assets/images/caret.png');
+    background-size: 10px 6px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 2px;
+    top: 3px;
+    z-index: 0;
+  }
+
+  &-date > &-date_picker hr {
+    display: none;
+  }
+
+  &-time &-time_button {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 18px;
+    background-color: #d8d8d8;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: white;
+  }
+
+  &-time &-time_button > svg {
+    margin-top: -4px;
+  }
+
+  &-time &-up_button {
+    border-radius: 6px 6px 0 0;
+  }
+
+  &-time &-down_button {
+    border-radius: 0 0 6px 6px;
+  }
+
+  &-caption {
+    font-family: Prompt;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9a9595;
+    margin-right: 19px;
+  }
+
+  &-time &-time_input {
+    position: relative;
+    width: 74px;
+    font-family: Lato;
+    font-size: 18px;
+    text-align: center;
+    color: #7c7a7a;
+    border: none;
+    outline: none;
+  }
+
+  /* &-time &-time_input::after{
+    content : '';
+    background-image: url('../../../assets/images/caret.png');
+    background-size: 16px 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 2px;
+    top: 3px;
+  } */
+
+  &-periods {
+    width: 68px;
+    height: 24px;
+    border: solid 1px #7c7a7a;
+    text-transform: uppercase;
+    font-family: Lato;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #7c7a7a;
+  }
+
+  &-periods > div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &-periods > &-active {
+    background-color: #7c7a7a;
+    color: #ffffff;
+  }
+
+  &-duration_input {
+    width: 94px;
+    height: 31px;
+    border: solid 2px #efefef;
+    outline: none;
+    background-color: transparent;
+    font-family: Lato;
+    font-size: 16px;
+    color: #575757;
+  }
+
+  &-interview_type {
+    margin-top: 32px;
+    align-items: center;
+  }
+
+  &-interview_title {
+    margin-left: 64px;
+  }
+
+  &-interview_type > select {
+    background: none;
+    border: none;
+    outline: none;
+    width: 174px;
+    height: 31px;
+    border: solid 2px #efefef;
+    font-family: Lato;
+    font-size: 16px;
+    color: #575757;
+  }
+
+  &-button-block-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-button_block {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 61px;
+    margin-bottom: 30px;
+    width: 426px;
+  }
+
+  &-small {
+    width: 242px;
+  }
+
+  &-button {
+    position: relative;
+    width: 140px;
+    height: 36px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  &-button_block > &-hire_btn {
+    width: 100%;
+    background-color: #389981;
+  }
+
+  &-button_block > &-cancel_btn {
+    width: 100%;
+    margin: 21px 0;
+    background-color: #d4a14f;
+  }
+
+  &-button_block > &-reassign_btn {
+    width: 100%;
+    height: 36px;
+    background-color: #1a92bd;
+  }
+
+  &-button_block > &-hire_btn > &-icon {
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    font-size: 26px;
+  }
+
+  &-button_block > &-cancel_btn > &-icon {
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    font-size: 26px;
+  }
+
+  &-button_block > &-reassign_btn > &-icon {
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    font-size: 26px;
+  }
+
+  &-comment {
+    margin-top: 27px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-comment > textarea {
+    width: 362px;
+    height: 105px;
+    opacity: 0.63;
+    border: solid 1px #d7d7d7;
+    resize: none;
+  }
+}
+
+input[type=time]::-webkit-clear-button,
+input[type=time]::-webkit-inner-spin-button,
+input[type=time]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}

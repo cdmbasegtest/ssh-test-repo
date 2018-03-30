@@ -1,0 +1,98 @@
+.ChatList {
+  display: flex;
+  width: 272px;
+  height: 519px;
+  flex-direction: column;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.5);
+  background-color: #efefef;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+
+  &-head{
+  	height: 44px;
+    background-color: #b1b1b1;
+    font-family: Prompt;
+  	font-size: 18px;
+  	font-weight: 500;
+  	color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &-text{
+      margin-right: 115px;
+    }
+  }
+
+
+  &-add_btn{
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+
+  &-row {
+    display: flex;
+    flex-direction: row;
+
+    &-chat{
+      position: relative;
+      border-top:1px solid #efefef;
+      cursor: pointer;
+      width: 272px;
+      height: 60px;
+      background-color: #ffffff;
+
+      &-text{
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: bold;
+        color: #565656;
+        flex: 7;
+        padding-left: 12px;
+        margin: auto;
+      }
+
+      &-icon{
+        flex: 1;
+        margin: auto 0;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 3px;
+        margin-top: -7px;
+      }
+
+      &-active,
+      &:hover{
+        background-color: #f5f5f5;
+      }
+
+      &:hover &-icon,
+      &-active &-icon{
+        display: block;
+      }
+
+      &-avatar{
+        margin-left: 16px;
+        flex: 2;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    &-chat:last-child{
+      border-bottom:1px solid #efefef;
+    }
+  }
+
+  &-time{
+    font-family: Prompt;
+    font-size: 10px;
+    color: #4c4c4c;
+    margin-right: 12px;
+    margin-top: 5px;
+  }
+}

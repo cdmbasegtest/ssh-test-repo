@@ -1,0 +1,26 @@
+@import "normalize.css";
+@import "imports/variables";
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Prompt');
+@import url('https://fonts.googleapis.com/css?family=Mitr');
+
+body {
+  color: var(--base-font-color);
+  background-color: var(--content-background);
+  font-size: var(--base-font-size);
+  font-family: var(--base-font-family);
+  line-height: var(--base-font-height);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}

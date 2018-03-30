@@ -1,0 +1,134 @@
+.EditableItem {
+  &-department {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    min-width: 200px;
+    padding-left: 20px;
+
+    &:hover {
+      background-color: #c9c2bf;
+    }
+  }
+
+  &-department-selected {
+    background-color: #c9c2bf;
+  }
+
+  &-editing-department {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #c9c2bf;
+    height: 54px;
+    min-width: 200px;
+    padding: 0 9px;
+
+    span {
+      font-family: Lato;
+      font-size: 11px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: left;
+      color: #ffffff;
+    }
+  }
+
+  &-department-item-name {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    color: #505050;
+  }
+
+  &-department-control-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 18px;
+    border-radius: 10px;
+    background-color: #b9b1ae;
+
+    div {
+      cursor: pointer;
+    }
+  }
+
+  &-job {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    min-width: 200px;
+    padding-left: 20px;
+    &:hover {
+      background-color: #433e3d;
+    }
+  }
+
+  &-job-selected {
+    background-color: #433e3d;
+  }
+
+  &-editing-job {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #433f3d;
+    height: 54px;
+    min-width: 200px;
+    padding: 0 9px;
+
+    span {
+      font-family: Lato;
+      font-size: 11px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: left;
+      color: #ffffff;
+    }
+  }
+
+  &-job-item-name {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-job-control-buttons {
+    display: flex;
+    background-color: #433e3d;
+    align-items: center;
+    width: 44px;
+    height: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #433f3d;
+
+    div {
+      cursor: pointer;
+    }
+  }
+
+  &-edit {
+    padding-left: 9px;
+    height: 24px;
+    border: solid 1px #ffffff;
+    width: 100%;
+  }
+
+  &-close-button {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+  }
+}

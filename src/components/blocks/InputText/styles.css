@@ -1,0 +1,12 @@
+.InputText {
+    width: 285px;
+    height: 30px;
+    background-color: #ffffff;
+    border: solid 1px #979797;
+    flex: 8;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: italic;
+    color: #a4a2a2;
+    padding: 7px 10.7px
+}

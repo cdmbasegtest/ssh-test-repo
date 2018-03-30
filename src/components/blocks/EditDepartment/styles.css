@@ -1,0 +1,52 @@
+.editDepartment {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  width: 200px;
+  padding-left: 20px;
+
+  &-editing {
+    display: flex;
+    flex-direction: column;
+    background-color: #c9c2bf;
+    height: 54px;
+    width: 200px;
+    padding: 0 9px;
+
+    span {
+      font-family: Lato;
+      font-size: 11px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: left;
+      color: #ffffff;
+    }
+  }
+
+  &-item-name {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #505050;
+  }
+
+  &-control-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 18px;
+    border-radius: 10px;
+    background-color: #b9b1ae;
+  }
+
+  &-edit {
+    padding-left: 9px;
+    height: 24px;
+    border: solid 1px #ffffff;
+    width: 100%;
+  }
+}

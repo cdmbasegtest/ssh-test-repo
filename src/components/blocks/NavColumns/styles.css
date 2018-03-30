@@ -1,0 +1,13 @@
+.NavColumns {
+  display: flex;
+  margin-top: -50px;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

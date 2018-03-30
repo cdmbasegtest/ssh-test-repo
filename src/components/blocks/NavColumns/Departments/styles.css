@@ -1,0 +1,45 @@
+.DepartmentsColumn {
+  display: flex;
+  width: 200px;
+  background-color: #e8e3e1;
+  box-shadow: 0 4px 7px 0 #262626;
+  flex-direction: column;
+  animation: slideIn 0.3s forwards;
+  z-index: 2;
+
+  &-new-department {
+    position: relative;
+    border: none;
+    width: 160px;
+    height: 28px;
+    border-radius: 90px;
+    background-color: #8c807b;
+    box-shadow: 0 2px 5px 0 #959291;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  &-icon {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 79px;
+    border-bottom: 2px solid #d2cbcb;
+  }
+
+  &-label {
+    margin: 7px 20px;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: italic;
+    color: #575757;
+  }
+}

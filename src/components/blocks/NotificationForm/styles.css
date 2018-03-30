@@ -1,0 +1,160 @@
+.NotificationForm{
+    display: flex;
+    flex-direction: column;
+    width: 387px;
+    height: 445px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.3);
+    position: absolute;
+    margin-right: 2px;
+    bottom: 0;
+    right: 419px;
+    top: 80px;
+
+&-title{
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    width: 100%;
+}
+&-title>&-close{
+    margin-right: 0;
+    margin-top: 0;
+}
+&-title>&-image{
+    width: 68px;
+    height: 68px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-left: 19px;
+    margin-right: 55px;
+}
+
+&-title>&-name{
+    font-family: Lato;
+    font-size: 18px;
+    color: #575757;
+}
+
+&-main{
+    width: 278px;
+    min-height: 76px;
+    font-family: Lato;
+    font-size: 16px;
+    text-align: center;
+    color: #575757;
+    margin-top: 40px;
+    margin-left: 41px;
+}
+
+&-main>div>span{
+    font-weight: bold;
+}
+
+&-comment{
+    margin-top: 62px;
+    margin-left: 19px;
+    width: 323px;
+    height: 68px;
+}
+
+&-comment>textarea{
+    opacity: 0.63;
+    border: solid 1px #979797;
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+
+&-comment>textarea::-moz-placeholder{
+    font-family: Lato;
+    font-size: 15px;
+    font-style: italic;
+    color: #a4a2a2;
+}
+
+&-comment>textarea:-moz-placeholder{
+    font-family: Lato;
+    font-size: 15px;
+    font-style: italic;
+    color: #a4a2a2;
+}
+
+&-comment>textarea:-ms-input-placeholder{
+    font-family: Lato;
+    font-size: 15px;
+    font-style: italic;
+    color: #a4a2a2;
+}
+
+&-comment>textarea::-webkit-input-placeholder{
+    font-family: Lato;
+    font-size: 15px;
+    font-style: italic;
+    color: #a4a2a2;
+}
+
+&-buttons{
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-between;
+    width: 323px;
+    margin-left: 20px;
+}
+
+&-button{
+    position: relative;
+    width: 150px;
+    height: 36px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+  }
+
+&-buttons>&-refuse_btn{
+    background-color: #d86363;
+}
+
+&-buttons>&-accept_btn{
+    background-color: #429d8a;
+}
+
+&-buttons>&-refuse_btn>svg,
+&-buttons>&-accept_btn>svg{
+    position: absolute;
+    left: 14px;
+    top: 8px;
+    font-size: 20px;
+}
+
+&-right_line{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 28px;
+    background-color: #f4f4f4;
+    right: 0;
+    border-radius: 0px 6px 6px 0px;
+}
+
+&-right_line>button{
+    margin-top: 1px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+&-right_line>button svg{
+    font-size: 24px;
+    color: #9e9d9d;
+}
+
+}
